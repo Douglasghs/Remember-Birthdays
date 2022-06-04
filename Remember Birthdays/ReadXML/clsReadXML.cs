@@ -26,12 +26,22 @@ namespace Remember_Birthdays.ReadXML
         {
             try
             {
-                XmlDocument doc = new XmlDocument();
+               
                 string cadastro = @"./config.xml";
+                //doc.Load(cadastro);
+                //XmlNode nodeListTipo = doc.SelectNodes("//root//data//tipo").Item(0);
+                //XmlNodeList nodeListMetadata = doc.SelectNodes("//root//data//tipo//metadata");
+                //logValue = nodeListTipo.Attributes["logValue"].Value;
+
+                //string sCaminhoDoArquivo = Server.MapPath(cadastro);
+
+                //Lendo XML com XmlTextReader
+                XmlDocument doc = new XmlDocument();
                 doc.Load(cadastro);
-                XmlNode nodeListTipo = doc.SelectNodes("//root//data//tipo").Item(0);
-                XmlNodeList nodeListMetadata = doc.SelectNodes("//root//data//tipo//metadata");
-                logValue = nodeListTipo.Attributes["logValue"].Value;
+
+                XmlNodeList LogValue = doc.GetElementsByTagName("logValue");
+                this.setLog(LogValue[0].InnerText);
+
             }
             catch (Exception Ex)
             {

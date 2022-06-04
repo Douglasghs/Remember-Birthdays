@@ -27,24 +27,22 @@ namespace Remember_Birthdays
         {
             InitializeComponent();
 
-            #region SetDepencies
-
+            // DEPENDÊNCIAS
             clsReadXML = new clsReadXML();
-
-            #endregion
-
-            LogClass.LogPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Logs");
-            clsReadXML.ReadXml();
-            string _LogLevel = clsReadXML.getLog();
-            LogClass.SetLogLevel(getLogLevel(_LogLevel));
         }
 
         protected override void OnStart(string[] args)
         {
+            LogClass.LogPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Logs");
+            clsReadXML.ReadXml();
+            string _LogLevel = clsReadXML.getLog();
+            LogClass.SetLogLevel(getLogLevel(_LogLevel));
+            LogClass.Write(LogClass.LogTag.Info, "Progama iniciado");
         }
 
         protected override void OnStop()
         {
+            LogClass.Write(LogClass.LogTag.Info, "Progama encerrado");
         }
 
 
