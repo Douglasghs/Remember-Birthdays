@@ -33,6 +33,7 @@ namespace Remember_Birthdays
 
         protected override void OnStart(string[] args)
         {
+            // CONFIG LOGS
             LogClass.LogPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "Logs");
             clsReadXML.ReadXml();
             string _LogLevel = clsReadXML.getLog();
@@ -44,9 +45,6 @@ namespace Remember_Birthdays
         {
             LogClass.Write(LogClass.LogTag.Info, "Progama encerrado");
         }
-
-
-
 
         private static LogClass.LogTag getLogLevel(string Loglevel)
         {

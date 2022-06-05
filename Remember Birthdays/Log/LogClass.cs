@@ -9,7 +9,7 @@ namespace Remember_Birthdays.Log
     public static class LogClass
     {
 
-        const String LOG_FILE_NAME = "CentralServerTPFRest";
+        const String LOG_FILE_NAME = "Remember Birthdays";
         static Boolean enableLog = true;
         static LogTag logLevel = LogTag.Debug;
 

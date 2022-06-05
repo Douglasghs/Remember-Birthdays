@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,15 +28,8 @@ namespace Remember_Birthdays.ReadXML
             try
             {
                
-                string cadastro = @"./config.xml";
-                //doc.Load(cadastro);
-                //XmlNode nodeListTipo = doc.SelectNodes("//root//data//tipo").Item(0);
-                //XmlNodeList nodeListMetadata = doc.SelectNodes("//root//data//tipo//metadata");
-                //logValue = nodeListTipo.Attributes["logValue"].Value;
+                string cadastro = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "/config.xml";
 
-                //string sCaminhoDoArquivo = Server.MapPath(cadastro);
-
-                //Lendo XML com XmlTextReader
                 XmlDocument doc = new XmlDocument();
                 doc.Load(cadastro);
 

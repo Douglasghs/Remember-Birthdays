@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remember Birthdays", "Remember Birthdays.csproj", "{B5ED515F-9A71-42F0-B550-07E6086F2544}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tela_Aviso_Remember Birthdays", "..\Tela_Aviso_Remember Birthdays\Tela_Aviso_Remember Birthdays.csproj", "{3823B2FD-8DF7-454E-9213-15B99620DD5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B5ED515F-9A71-42F0-B550-07E6086F2544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5ED515F-9A71-42F0-B550-07E6086F2544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5ED515F-9A71-42F0-B550-07E6086F2544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3823B2FD-8DF7-454E-9213-15B99620DD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3823B2FD-8DF7-454E-9213-15B99620DD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3823B2FD-8DF7-454E-9213-15B99620DD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3823B2FD-8DF7-454E-9213-15B99620DD5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
